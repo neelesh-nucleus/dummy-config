@@ -1,11 +1,12 @@
 build:
-  version: "2.0"
+  version: "tester"
 
 cards:
-  message: "Welcome to EazyBank cards related QA APIs "
+  message: "Welcome to dummy cards related local APIs - in config folder  "
   contactDetails:
-    name: "Cherryl Pankaj - QA Lead"
-    email: "cherryl@eazybank.com"
+    name: "Jane Doe - tester"
+    email: "dummy@abc.com"
   onCallSupport:
-    - (310) 875-4367
-    - (201) 236-1267
+    - (555) 666-1234
+    - (555) 696-1345
+    
