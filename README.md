@@ -1,1 +1,1 @@
-# eazybytes-config
+# dummy-config
