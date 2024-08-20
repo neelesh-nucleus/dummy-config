@@ -1,11 +1,12 @@
 build:
-  version: "3.0"
+  version: "development"
 
 cards:
-  message: "Welcome to EazyBank cards related local APIs "
+  message: "Welcome to dummy cards related local APIs - in config folder  "
   contactDetails:
-    name: "Dragos Lech - Developer"
-    email: "dragos@eazybank.com"
+    name: "John Doe - Developer"
+    email: "dummy@abc.com"
   onCallSupport:
-    - (412) 419-3491
-    - (915) 382-1932
+    - (555) 555-1234
+    - (555) 523-1345
+        
