@@ -1,11 +1,11 @@
-build:
-  version: "2.0"
+ build:
+  version: "Quality"
 
 accounts:
-  message: "Welcome to EazyBank accounts related QA APIs "
+  message: "Welcome to dummy accounts related local APIs - in config folder"
   contactDetails:
-    name: "Smitha Ray - QA Lead"
-    email: "smitha@eazybank.com"
+    name: "Jane Doe - Tester"
+    email: "dummy@abc.com"
   onCallSupport:
-    - (666) 265-3765
-    - (666) 734-8371
+    - (555) 555-4567
+    - (555) 523-4678
