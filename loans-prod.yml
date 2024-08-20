@@ -1,11 +1,11 @@
 build:
-  version: "1.0"
+  version: "production"
 
 loans:
-  message: "Hey, welcome to EazyBank loans related prod APIs "
+  message: "Welcome to dummy loans related local APIs - in config folder  "
   contactDetails:
-    name: "Pelias Sudhir - Product Owner"
-    email: "pelias@eazybank.com"
+    name: "Mike Doe - owner"
+    email: "{cipher}c373c49000432a2ee62ab8655c548978f96e6f50ae861d902ac9b1f5486a433c84eb13d3bd8b91ff368fca291d93ae3d"
   onCallSupport:
-    - (723) 656-8709
-    - (156) 342-0956
+    - (555) 111-1234
+    - (555) 121-1345
