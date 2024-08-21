@@ -2,7 +2,7 @@ build:
   version: "prod"
 
 cards:
-  message: "Welcome to dummy cards related local APIs - in config folder - cards - 3311  "
+  message: "Welcome to dummy cards related local APIs - in config folder - cards - final  "
   contactDetails:
     name: "David Doe - Owner"
     email: "{cipher}b3332d2fda793dbd7651c41a8ce03d4af3d376e0ea85d494f2e3405c4de20568f0ef6527fdac3665a8e63379253c9624"
