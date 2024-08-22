@@ -2,7 +2,7 @@ build:
   version: "Production"
 
 accounts:
-  message: "Welcome to dummy accounts related local APIs for Customer - in config folder - acc - final"
+  message: "Welcome to dummy accounts related local APIs for Customer - in GIT - first"
   contactDetails:
     name: "Mike Doe - Customer"
     email: "{cipher}b08ebea11ce8a498f7bac3f29e5baa6ccb7f99a5f8a6fb110b6e5407fbe697e7b624eef5f8ed1d9b726b792196e8db38"
