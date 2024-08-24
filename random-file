@@ -1,33 +1,43 @@
+------application.yml
 server:
-  port: 8111
-  
+   port: 8071
+   
 spring:
-  application: 
-     name: "accounts"
-     
-  profiles:
-     active: "prod"
-     
-  datasource:
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    username: sa
-    password: ''
-  h2:
-    console:
-      enabled: true
-  jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
-    show-sql: true 
+   application:
+      name: "configserver"
+   
+   profiles:
+      active: native
+      
+   cloud:
+      config:
+         server:
+            native: 
+               search-locations: "classpath:/config"
+               #search-locations: "file:///D://workspace//microservices//dummy-bank//microservices-3.3.2//config"
     
-  config:
-    #import: "configserver:http://localhost:8071/"
-    import: "optional:configserver:http://localhost:8071/"
-     
+   rabbitmq:
+      host: "localhost"
+      port: 5672
+      username: "guest"
+      password: "guest"
+      
 management:
   endpoints:
     web:
       exposure:
-        include: bus-refresh
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+encrypt:
+   key: "4GHTDJ8ERCVB8YGH2WERD"
+
+
