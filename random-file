@@ -1,49 +1,7 @@
 FROM openjdk:21-slim
 
-LABEL dummy
+MAINTAINER dummy
 
-COPY target/accounts-0.0.1-SNAPSHOT.jar
+COPY target/accounts-0.0.1-SNAPSHOT.jar accounts-0.0.1-SNAPSHOT.jar
 
 ENTRYPOINT ["java", "-jar", "accounts-0.0.1-SNAPSHOT.jar"]
-
-accounts		8111
-loans			8122
-cards			8133
-configserver	8071
-
-rabbitmq mng	15672
-rabbitmq client	5672
-
-mvn clean install -DskipTests
-
-docker build . -t dummy/accounts:v1
-
-docker run -d -p 8080:8080 dummy/accounts:v1
-
---build pack --loans
-mvn spring-boot:build-image
-
---jib	--cards
-mvn compile jib:dockerBuild
-
-
-
---registry
-
-docker run -d -p 5000:5000 --name dummyDockerHub registry:2
-
-
-docker tag [OPTIONS] IMAGE[:TAG] [REGISTRYHOST/][USERNAME/]NAME[:TAG]
-docker tag dummy/accounts:v1 NB1841:5000/dummy-accounts:v1
-
-docker push NAME[:TAG]
-docker push NB1841:5000/dummy-accounts:v1
-docker push abcdef:2000/myapp:latest
-
-
-----rabbitmq
-
-docker run -it -d --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management
-
-
-
